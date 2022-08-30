@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<style type="text/css">
+		
+		body{
+			background-color: #d5e1ef;
+			display: flex;
+			justify-content: center;
+			/*align-items: center;*/
+			overflow-y: hidden;
+		}
+
+		
+		.container{
+			border:1px solid white;
+			border-radius: 10px;
+			background-color: white;
+			width: 250px;
+			height: 379px;
+			margin: 130px auto;
+		}
+
+		.card{
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+		}
+
+		img{
+			width: 230px;
+			height: 230px;
+			margin: 10px auto;
+			border:1px solid white;
+			border-radius: 10px;
+		}
+
+		.card .teks{
+			display: flex;
+			flex-direction: column;	
+		}
+
+		.card .teks h4{
+			margin: 10px 35px;
+			text-align: center;
+		}
+
+		.card .teks p{
+			font-size: 15px;
+			margin: 10px ;
+			text-align: center;
+			color: gray;
+			font-family: Outfit;
+		}
+
+
+@media only screen and (max-width: 600px){
+
+	body{
+		display: flex;
+		justify-content: center;
+	}
+	.container{
+		transform: scale(1.45);
+		/*margin: 150px auto;*/
+		margin-top: 100px;
+		height: 65vh; 
+		box-sizing: border-box;
+	}
+
+
+}
+		
+	</style>
+</head>
+<body>	
+	<div class="container">
+		<div class="card">
+			<img src="images/qrcode.png">
+			<div class="teks">
+				<h4>
+					Improve your front-end skills by building projects
+				</h4>
+				<p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level </p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
